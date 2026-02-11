@@ -27,6 +27,6 @@ export const heroSlides: Slide[] = [
     image: '/images/banner_cafe_da_manha.jpg',
     alt: 'Café da manhã com pães frescos Veneza',
     title: 'Do Nosso Forno à Sua Mesa',
-    subtitle: 'Pães, panettones e colombas com o sabor da tradição italiana',
+    subtitle: 'Pães, panettones e bolos pascais com o sabor da tradição italiana',
   },
 ]

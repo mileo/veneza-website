@@ -71,7 +71,7 @@ useHead({
         <AnimateOnScroll>
           <div class="text-center space-y-8 text-warm-gray leading-relaxed text-lg">
             <p>
-              A família Veneza soma mais de <strong class="text-burgundy">35 anos de experiência</strong> no mercado de panificação e produz uma extensa linha de produtos, incluindo pães de alho, colombas pascais, ovos de chocolate e os deliciosos panettones.
+              A família Veneza soma mais de <strong class="text-burgundy">35 anos de experiência</strong> no mercado de panificação e produz uma extensa linha de produtos, incluindo pães de alho, bolos pascais, ovos de chocolate e os deliciosos panettones.
             </p>
             <p>
               Para entregar produtos de alta qualidade, utilizamos <strong class="text-burgundy">ingredientes selecionados</strong> um a um, massa madre ou <strong class="text-burgundy">levain</strong> e <strong class="text-burgundy">fermentação natural</strong> seguindo as tradicionais receitas italianas.

@@ -2,10 +2,10 @@
 import { products } from '~/data/products'
 
 useSeoMeta({
-  title: 'Pães Artesanais, Panettones e Colombas',
-  ogTitle: 'Pães Artesanais, Panettones e Colombas | Panificadora Veneza',
-  description: 'Conheça nossa linha de pães artesanais, panettones, colombas pascais e ovos de chocolate. Receitas italianas com fermentação natural.',
-  ogDescription: 'Pães, panettones, colombas pascais e ovos de chocolate com fermentação natural.',
+  title: 'Pães Artesanais, Panettones e Bolos Pascais',
+  ogTitle: 'Pães Artesanais, Panettones e Bolos Pascais | Panificadora Veneza',
+  description: 'Conheça nossa linha de pães artesanais, panettones, bolos pascais e ovos de chocolate. Receitas italianas com fermentação natural.',
+  ogDescription: 'Pães, panettones, bolos pascais e ovos de chocolate com fermentação natural.',
   ogImage: '/images/og_image.jpg',
 })
 

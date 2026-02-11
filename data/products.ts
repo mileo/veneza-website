@@ -10,10 +10,10 @@ export const products: Product[] = [
   },
   {
     id: 'panettones',
-    name: 'Bolos, Colombas Pascais e Panettones',
-    description: 'Massa fofinha, recheio generoso e o aroma inconfundível de frutas cristalizadas e chocolate. Nossos panettones, colombas pascais e bolos seguem receitas italianas com fermentação natural — o segredo para aquele sabor que marca as festas da família.',
+    name: 'Bolos Pascais e Panettones',
+    description: 'Massa fofinha, recheio generoso e o aroma inconfundível de frutas cristalizadas e chocolate. Nossos panettones, bolos pascais e bolos especiais seguem receitas italianas com fermentação natural — o segredo para aquele sabor que marca as festas da família.',
     image: '/images/produto_panettone.jpg',
-    alt: 'Panettones e colombas pascais da Panificadora Veneza',
+    alt: 'Panettones e bolos pascais da Panificadora Veneza',
   },
   {
     id: 'ovos-chocolate',
