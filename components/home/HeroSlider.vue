@@ -72,14 +72,16 @@ onUnmounted(() => {
             to="/produtos"
             class="inline-flex items-center justify-center px-8 py-3.5 bg-caramel text-white font-semibold text-sm uppercase tracking-wider rounded-lg hover:bg-caramel-dark hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
           >
-            Nossos Produtos
+            Conheça Nossos Produtos
           </NuxtLink>
-          <NuxtLink
-            to="/contato"
+          <a
+            href="https://wa.me/5512997437379"
+            target="_blank"
+            rel="noopener"
             class="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white/60 text-white font-semibold text-sm uppercase tracking-wider rounded-lg hover:bg-white/10 hover:border-white transition-all duration-300"
           >
-            Fale Conosco
-          </NuxtLink>
+            Fale pelo WhatsApp
+          </a>
         </div>
       </div>
     </div>

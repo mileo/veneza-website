@@ -32,7 +32,7 @@ function handleSubmit() {
       placeholder="Escreva sua mensagem..."
     />
     <FormButton :loading="isSubmitting">
-      Enviar
+      Enviar Mensagem
     </FormButton>
 
     <Transition name="fade">

@@ -15,9 +15,12 @@ useSeoMeta({
       <div class="pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">
-            Trabalhe Conosco
+            Faça Parte da Nossa Equipe
           </h1>
-          <div class="w-20 h-0.5 bg-caramel mx-auto" />
+          <p class="text-lg md:text-xl text-white/80 font-light tracking-wide">
+            Mais de 35 anos construindo tradição — e sempre buscando novos talentos
+          </p>
+          <div class="w-20 h-0.5 bg-caramel mx-auto mt-4" />
         </div>
       </div>
     </ParallaxBackground>
@@ -28,7 +31,7 @@ useSeoMeta({
         <AnimateOnScroll>
           <div class="text-center mb-12">
             <p class="text-warm-gray text-lg leading-relaxed">
-              Quer fazer parte da nossa equipe? Preencha o formulário abaixo com seus dados e entraremos em contato.
+              Na Veneza, acreditamos que grandes produtos nascem de grandes pessoas. Se você tem paixão pelo que faz e quer crescer em uma empresa com mais de três décadas de tradição, queremos conhecer você. Preencha o formulário abaixo e entraremos em contato.
             </p>
           </div>
         </AnimateOnScroll>

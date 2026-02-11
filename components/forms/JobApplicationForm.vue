@@ -46,7 +46,7 @@ function handleSubmit() {
     />
 
     <FormButton :loading="isSubmitting">
-      Enviar
+      Enviar Candidatura
     </FormButton>
 
     <Transition name="fade">

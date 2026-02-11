@@ -18,9 +18,12 @@ useSeoMeta({
       <div class="pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">
-            Institucional
+            Mais de 35 Anos de Tradição Italiana
           </h1>
-          <div class="w-20 h-0.5 bg-caramel mx-auto" />
+          <p class="text-lg md:text-xl text-white/80 font-light tracking-wide">
+            Da família Veneza para a sua mesa, desde 1989
+          </p>
+          <div class="w-20 h-0.5 bg-caramel mx-auto mt-4" />
         </div>
       </div>
     </ParallaxBackground>
@@ -37,7 +40,7 @@ useSeoMeta({
               Para entregar produtos de alta qualidade, utilizamos <strong class="text-burgundy">ingredientes selecionados</strong> um a um, massa madre ou <strong class="text-burgundy">levain</strong> e <strong class="text-burgundy">fermentação natural</strong> seguindo as tradicionais receitas italianas.
             </p>
             <p class="text-xl font-serif text-burgundy italic">
-              Cuidamos de tudo para que você leve muito carinho, respeito e sabor à sua mesa!
+              Cuidamos de tudo para que você leve muito carinho, respeito e sabor à sua mesa.
             </p>
           </div>
         </AnimateOnScroll>

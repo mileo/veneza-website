@@ -17,9 +17,12 @@ useSeoMeta({
       <div class="pt-32 pb-20 lg:pt-40 lg:pb-28">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-4">
-            Contato
+            Fale com a Veneza
           </h1>
-          <div class="w-20 h-0.5 bg-caramel mx-auto" />
+          <p class="text-lg md:text-xl text-white/80 font-light tracking-wide">
+            Estamos prontos para atender você
+          </p>
+          <div class="w-20 h-0.5 bg-caramel mx-auto mt-4" />
         </div>
       </div>
     </ParallaxBackground>

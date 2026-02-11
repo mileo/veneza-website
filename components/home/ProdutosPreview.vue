@@ -9,7 +9,7 @@ import { products } from '~/data/products'
         <AnimateOnScroll>
           <SectionHeading
             title="Produtos"
-            subtitle="Tradição e sabor em cada receita"
+            subtitle="Feitos com receitas italianas e fermentação natural"
             light
           />
         </AnimateOnScroll>
@@ -30,7 +30,7 @@ import { products } from '~/data/products'
               to="/produtos"
               class="inline-flex items-center gap-2 px-8 py-3.5 bg-caramel text-white font-semibold text-sm uppercase tracking-wider rounded-lg hover:bg-caramel-dark hover:shadow-xl transition-all duration-300 hover:-translate-y-0.5"
             >
-              Ver Todos os Produtos
+              Explore Nossa Linha Completa
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>

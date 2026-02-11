@@ -2,8 +2,8 @@
 useSeoMeta({
   title: 'Início | Panificadora Veneza',
   ogTitle: 'Início | Panificadora Veneza',
-  description: 'Panificadora Veneza — Mais de 35 anos de tradição em panificação com receitas italianas e fermentação natural. Pães, panettones, colombas pascais e ovos de chocolate.',
-  ogDescription: 'Mais de 35 anos de tradição em panificação com receitas italianas e fermentação natural.',
+  description: 'Pães, panettones e colombas com fermentação natural de 24 horas e receitas italianas. Panificadora Veneza — tradição desde 1989 em Jacareí, SP.',
+  ogDescription: 'Pães, panettones e colombas com fermentação natural de 24 horas e receitas italianas. Tradição desde 1989.',
   ogImage: '/images/og_image.jpg',
   ogUrl: 'https://www.veneza.ind.br',
 })
