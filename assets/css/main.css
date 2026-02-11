@@ -1,0 +1,157 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-burgundy: #74262C;
+  --color-burgundy-dark: #5a1d22;
+  --color-burgundy-light: #8e3a41;
+  --color-dark-brown: #361215;
+  --color-caramel: #DB7821;
+  --color-caramel-dark: #c06a1b;
+  --color-cream: #F7F5E1;
+  --color-cream-dark: #ede9c8;
+  --color-rose: #D58F95;
+  --color-success: #6EAC7E;
+  --color-warm-gray: #413A38;
+
+  --font-serif: 'Lora', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-dark-brown);
+  background-color: #ffffff;
+}
+
+/* Serif headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-fade-in {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.animate-fade-in.is-visible {
+  opacity: 1;
+}
+
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-slide-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-slide-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Staggered children animation */
+.stagger-children > * {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.stagger-children.is-visible > *:nth-child(1) { transition-delay: 0.1s; }
+.stagger-children.is-visible > *:nth-child(2) { transition-delay: 0.2s; }
+.stagger-children.is-visible > *:nth-child(3) { transition-delay: 0.3s; }
+.stagger-children.is-visible > *:nth-child(4) { transition-delay: 0.4s; }
+.stagger-children.is-visible > *:nth-child(5) { transition-delay: 0.5s; }
+
+.stagger-children.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Grain texture overlay */
+.grain-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Parallax effect */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 768px) {
+  .parallax-bg {
+    background-attachment: scroll;
+  }
+}
+
+/* Hero slider transitions */
+.slider-fade-enter-active,
+.slider-fade-leave-active {
+  transition: opacity 1.2s ease;
+}
+
+.slider-fade-enter-from,
+.slider-fade-leave-to {
+  opacity: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-burgundy);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-burgundy-dark);
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-rose);
+  color: var(--color-dark-brown);
+}
