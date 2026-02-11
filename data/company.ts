@@ -12,13 +12,10 @@ export const company: CompanyInfo = {
     country: 'BR',
   },
   phone: '(12) 3951-3195',
-  whatsapp: '5512997437379',
-  whatsappFormatted: '(12) 99743-7379',
-  email: 'faleconosco@veneza.ind.br',
-  socialMedia: {
-    facebook: 'https://www.facebook.com/panaboraveneza',
-    instagram: 'https://www.instagram.com/panaboraveneza',
-  },
+  whatsapp: '551239513195',
+  whatsappFormatted: '(12) 3951-3195',
+  email: 'contato@veneza.ind.br',
+  socialMedia: {},
 }
 
 export const navigation: NavItem[] = [

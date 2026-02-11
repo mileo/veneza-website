@@ -1,6 +1,22 @@
 <script setup lang="ts">
 import { company } from '~/data/company'
 
+const route = useRoute()
+
+const whatsappMessage = computed(() => {
+  const messages: Record<string, string> = {
+    '/': 'Olá! Gostaria de conhecer os produtos da Panificadora Veneza.',
+    '/produtos': 'Olá! Gostaria de fazer uma cotação dos produtos Veneza.',
+    '/contato': 'Olá! Gostaria de falar com a equipe comercial da Veneza.',
+    '/institucional': 'Olá! Gostaria de saber mais sobre a Panificadora Veneza.',
+  }
+  return messages[route.path] || 'Olá! Gostaria de mais informações sobre os produtos da Panificadora Veneza.'
+})
+
+const whatsappUrl = computed(() =>
+  `https://wa.me/${company.whatsapp}?text=${encodeURIComponent(whatsappMessage.value)}`
+)
+
 const isVisible = ref(false)
 
 function handleScroll() {
@@ -22,7 +38,7 @@ onUnmounted(() => {
   <Transition name="bounce">
     <a
       v-show="isVisible"
-      :href="`https://wa.me/${company.whatsapp}?text=Olá! Gostaria de mais informações sobre os produtos da Panificadora Veneza.`"
+      :href="whatsappUrl"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Fale conosco pelo WhatsApp"

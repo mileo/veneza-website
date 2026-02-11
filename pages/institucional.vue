@@ -47,6 +47,51 @@ useSeoMeta({
 
         <DecorativeDivider class="my-16" />
 
+        <!-- Nossos Diferenciais -->
+        <AnimateOnScroll animation="stagger">
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-burgundy/10 flex items-center justify-center">
+                <svg class="w-8 h-8 text-burgundy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-burgundy font-semibold mb-1">Fermentação Natural 24h</h3>
+              <p class="text-warm-gray text-sm">Processo artesanal sem atalhos</p>
+            </div>
+
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-burgundy/10 flex items-center justify-center">
+                <svg class="w-8 h-8 text-burgundy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c-1.2 0-2.4.6-3 1.5C8.4 3.6 7.2 3 6 3 3.8 3 2 4.8 2 7c0 4 5 8.5 10 12 5-3.5 10-8 10-12 0-2.2-1.8-4-4-4-1.2 0-2.4.6-3 1.5C14.4 3.6 13.2 3 12 3z" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-burgundy font-semibold mb-1">Receitas Italianas</h3>
+              <p class="text-warm-gray text-sm">Tradição passada por três gerações</p>
+            </div>
+
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-burgundy/10 flex items-center justify-center">
+                <svg class="w-8 h-8 text-burgundy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-burgundy font-semibold mb-1">Ingredientes Selecionados</h3>
+              <p class="text-warm-gray text-sm">Escolhidos um a um, sem conservantes</p>
+            </div>
+
+            <div class="text-center">
+              <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-burgundy/10 flex items-center justify-center">
+                <svg class="w-8 h-8 text-burgundy" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+                </svg>
+              </div>
+              <h3 class="font-serif text-burgundy font-semibold mb-1">+35 Anos de Tradição</h3>
+              <p class="text-warm-gray text-sm">Desde 1989 em Jacareí, SP</p>
+            </div>
+          </div>
+        </AnimateOnScroll>
+
         <!-- Product preview circles -->
         <AnimateOnScroll animation="stagger">
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">

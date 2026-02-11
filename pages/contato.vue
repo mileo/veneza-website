@@ -58,6 +58,13 @@ useSeoMeta({
         </AnimateOnScroll>
 
         <DecorativeDivider />
+
+        <AnimateOnScroll>
+          <p class="text-center text-warm-gray text-lg leading-relaxed mt-12 max-w-2xl mx-auto">
+            Atendemos padarias, restaurantes, supermercados e eventos em todo o Vale do Paraíba.
+            Solicite nosso catálogo completo ou peça uma amostra dos nossos produtos.
+          </p>
+        </AnimateOnScroll>
       </div>
     </section>
 
@@ -65,7 +72,7 @@ useSeoMeta({
     <section class="py-20 lg:py-28">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
-          <SectionHeading title="Fale com a gente!" />
+          <SectionHeading title="Fale com a gente!" subtitle="Respondemos em até 24 horas úteis." />
         </AnimateOnScroll>
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
