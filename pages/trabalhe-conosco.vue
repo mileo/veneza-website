@@ -1,10 +1,26 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Trabalhe Conosco | Panificadora Veneza',
-  ogTitle: 'Trabalhe Conosco | Panificadora Veneza',
+  title: 'Trabalhe Conosco — Vagas em Jacareí',
+  ogTitle: 'Trabalhe Conosco | Panificadora Veneza — Vagas em Jacareí',
   description: 'Faça parte da equipe da Panificadora Veneza. Envie sua candidatura e venha trabalhar conosco.',
   ogDescription: 'Trabalhe conosco — Panificadora Veneza, Jacareí SP.',
   ogImage: '/images/og_image.jpg',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': 'https://www.veneza.ind.br/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Trabalhe Conosco', 'item': 'https://www.veneza.ind.br/trabalhe-conosco' },
+        ],
+      }),
+    },
+  ],
 })
 </script>
 

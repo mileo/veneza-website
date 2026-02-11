@@ -49,6 +49,8 @@ onUnmounted(() => {
         class="absolute inset-0 w-full h-full object-cover"
         loading="eager"
         sizes="100vw"
+        width="1920"
+        height="1080"
       />
       <div class="absolute inset-0 bg-gradient-to-b from-dark-brown/50 via-dark-brown/30 to-dark-brown/70" />
     </div>
@@ -56,11 +58,12 @@ onUnmounted(() => {
     <!-- Content overlay -->
     <div class="relative z-10 h-full flex items-center justify-center text-center px-4">
       <div class="max-w-3xl">
+        <h1 class="sr-only">Panificadora Veneza — Pães Artesanais com Fermentação Natural em Jacareí</h1>
         <Transition name="slide-up" mode="out-in">
-          <div :key="currentSlide">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 drop-shadow-lg">
+          <div :key="currentSlide" aria-live="polite">
+            <p class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-4 drop-shadow-lg">
               {{ heroSlides[currentSlide].title }}
-            </h1>
+            </p>
             <p class="text-lg sm:text-xl md:text-2xl text-white/90 font-light tracking-wide">
               {{ heroSlides[currentSlide].subtitle }}
             </p>
@@ -75,7 +78,7 @@ onUnmounted(() => {
             Conheça Nossos Produtos
           </NuxtLink>
           <a
-            href="https://wa.me/5512997437379"
+            href="https://wa.me/551239513195"
             target="_blank"
             rel="noopener"
             class="inline-flex items-center justify-center px-8 py-3.5 border-2 border-white/60 text-white font-semibold text-sm uppercase tracking-wider rounded-lg hover:bg-white/10 hover:border-white transition-all duration-300"

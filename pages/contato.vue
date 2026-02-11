@@ -2,11 +2,51 @@
 import { company } from '~/data/company'
 
 useSeoMeta({
-  title: 'Contato | Panificadora Veneza',
-  ogTitle: 'Contato | Panificadora Veneza',
+  title: 'Contato | Jacareí SP',
+  ogTitle: 'Contato — Panificadora Veneza | Jacareí SP',
   description: `Entre em contato com a Panificadora Veneza. ${company.address.street}, ${company.address.city}, ${company.address.state}. Tel: ${company.phone}`,
   ogDescription: 'Fale conosco — Panificadora Veneza, Jacareí SP.',
   ogImage: '/images/og_image.jpg',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': 'https://www.veneza.ind.br/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Contato', 'item': 'https://www.veneza.ind.br/contato' },
+        ],
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Bakery',
+        'name': 'Panificadora Veneza',
+        'url': 'https://www.veneza.ind.br',
+        'telephone': '+551239513195',
+        'email': 'contato@veneza.ind.br',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Estrada do Jardim, 1600',
+          'addressLocality': 'Jacareí',
+          'addressRegion': 'SP',
+          'postalCode': '12326-830',
+          'addressCountry': 'BR',
+        },
+        'geo': {
+          '@type': 'GeoCoordinates',
+          'latitude': -23.31393,
+          'longitude': -45.91189,
+        },
+      }),
+    },
+  ],
 })
 </script>
 

@@ -2,11 +2,42 @@
 import { products } from '~/data/products'
 
 useSeoMeta({
-  title: 'Produtos | Panificadora Veneza',
-  ogTitle: 'Produtos | Panificadora Veneza',
+  title: 'Pães Artesanais, Panettones e Colombas',
+  ogTitle: 'Pães Artesanais, Panettones e Colombas | Panificadora Veneza',
   description: 'Conheça nossa linha de pães artesanais, panettones, colombas pascais e ovos de chocolate. Receitas italianas com fermentação natural.',
   ogDescription: 'Pães, panettones, colombas pascais e ovos de chocolate com fermentação natural.',
   ogImage: '/images/og_image.jpg',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': 'https://www.veneza.ind.br/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Produtos', 'item': 'https://www.veneza.ind.br/produtos' },
+        ],
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        'name': 'Produtos da Panificadora Veneza',
+        'itemListElement': products.map((product, index) => ({
+          '@type': 'ListItem',
+          'position': index + 1,
+          'name': product.name,
+          'url': `https://www.veneza.ind.br/produtos#${product.id}`,
+          'image': `https://www.veneza.ind.br${product.image}`,
+        })),
+      }),
+    },
+  ],
 })
 
 const galleryImages: Record<string, string[]> = {

@@ -22,8 +22,8 @@ export const navigation: NavItem[] = [
   { label: 'Início', to: '/' },
   { label: 'Institucional', to: '/institucional' },
   { label: 'Produtos', to: '/produtos' },
-  { label: 'Contato', to: '/contato' },
   { label: 'Trabalhe Conosco', to: '/trabalhe-conosco' },
+  { label: 'Contato', to: '/contato' },
 ]
 
-export const googleMapsEmbedUrl = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.8!2d-45.97!3d-23.28!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDE2JzQ4LjAiUyA0NcKwNTgnMTIuMCJX!5e0!3m2!1spt-BR!2sbr!4v1'
+export const googleMapsEmbedUrl = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14656.060402574625!2d-45.920615275329574!3d-23.31521089279717!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdca72c617198b%3A0x70ee2b24ab0ec195!2sEstr.%20Mun.%20do%20Jardim%2C%201600%20-%20Jardim%20Santo%20Antonio%20da%20Boa%20Vista%2C%20Jacare%C3%AD%20-%20SP%2C%2012315-540%2C%20Brasil!5e0!3m2!1spt-BR!2sus!4v1770809551230!5m2!1spt-BR!2sus'

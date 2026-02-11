@@ -3,11 +3,48 @@ import { company } from '~/data/company'
 import { products } from '~/data/products'
 
 useSeoMeta({
-  title: 'Institucional | Panificadora Veneza',
-  ogTitle: 'Institucional | Panificadora Veneza',
+  title: 'Nossa História | Tradição Italiana desde 1989',
+  ogTitle: 'Nossa História — Panificadora Veneza | Tradição Italiana desde 1989',
   description: `A família Veneza soma mais de 35 anos de experiência no mercado de panificação. Receitas italianas, fermentação natural e ingredientes selecionados.`,
   ogDescription: 'Conheça a história da Panificadora Veneza — tradição italiana em panificação.',
   ogImage: '/images/og_image.jpg',
+})
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Início', 'item': 'https://www.veneza.ind.br/' },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Institucional', 'item': 'https://www.veneza.ind.br/institucional' },
+        ],
+      }),
+    },
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        'name': 'Panificadora Veneza',
+        'alternateName': 'Panifício Veneza',
+        'url': 'https://www.veneza.ind.br',
+        'logo': 'https://www.veneza.ind.br/images/logo.png',
+        'foundingDate': '1989',
+        'description': 'Mais de 35 anos de tradição em panificação com receitas italianas e fermentação natural.',
+        'address': {
+          '@type': 'PostalAddress',
+          'streetAddress': 'Estrada do Jardim, 1600',
+          'addressLocality': 'Jacareí',
+          'addressRegion': 'SP',
+          'postalCode': '12326-830',
+          'addressCountry': 'BR',
+        },
+      }),
+    },
+  ],
 })
 </script>
 

@@ -12,6 +12,8 @@ import { company, navigation } from '~/data/company'
             src="/images/logo.png"
             alt="Panificadora Veneza"
             class="h-20 w-auto brightness-0 invert mb-6"
+            width="144"
+            height="80"
           />
           <p class="text-white/70 text-sm leading-relaxed">
             {{ company.description }}
