@@ -108,22 +108,16 @@ useHead({
       </div>
     </section>
 
-    <!-- Form + Map -->
+    <!-- Map -->
     <section class="py-20 lg:py-28">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimateOnScroll>
-          <SectionHeading title="Fale com a gente!" subtitle="Respondemos em até 24 horas úteis." />
+          <SectionHeading title="Como chegar" subtitle="Estrada do Jardim, 1600 — Jacareí, SP" />
         </AnimateOnScroll>
 
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mt-12">
-          <AnimateOnScroll animation="slide-left">
-            <div class="bg-cream/50 rounded-2xl p-8 shadow-lg">
-              <ContactForm />
-            </div>
-          </AnimateOnScroll>
-
-          <AnimateOnScroll animation="slide-right">
-            <GoogleMap height="100%" />
+        <div class="mt-12">
+          <AnimateOnScroll>
+            <GoogleMap height="400px" />
           </AnimateOnScroll>
         </div>
       </div>

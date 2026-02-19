@@ -41,20 +41,17 @@ useHead({
       </div>
     </ParallaxBackground>
 
-    <!-- Application form -->
+    <!-- Info section -->
     <section class="py-20 lg:py-28 bg-cream relative grain-texture">
       <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <AnimateOnScroll>
-          <div class="text-center mb-12">
-            <p class="text-warm-gray text-lg leading-relaxed">
-              Na Veneza, acreditamos que grandes produtos nascem de grandes pessoas. Se você tem paixão pelo que faz e quer crescer em uma empresa com mais de três décadas de tradição, queremos conhecer você. Preencha o formulário abaixo e entraremos em contato.
+          <div class="text-center">
+            <p class="text-warm-gray text-lg leading-relaxed mb-8">
+              Na Veneza, acreditamos que grandes produtos nascem de grandes pessoas. Se você tem paixão pelo que faz e quer crescer em uma empresa com mais de três décadas de tradição, queremos conhecer você.
             </p>
-          </div>
-        </AnimateOnScroll>
-
-        <AnimateOnScroll>
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl">
-            <JobApplicationForm />
+            <p class="text-warm-gray text-lg leading-relaxed">
+              Envie seu currículo para <a href="mailto:contato@veneza.ind.br" class="text-burgundy font-semibold hover:text-caramel transition-colors">contato@veneza.ind.br</a> e entraremos em contato.
+            </p>
           </div>
         </AnimateOnScroll>
       </div>

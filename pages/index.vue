@@ -68,6 +68,5 @@ useHead({
     <FermentacaoSection />
     <ProdutosPreview />
     <ContatoSection />
-    <ContatoFormMap />
   </div>
 </template>
